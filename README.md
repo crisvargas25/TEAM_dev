@@ -6,7 +6,7 @@ Built with passion for the Web Applications course!
 
 ## 📜 Purpose
 
-This engaging web app showcases the personal profiles and hobbies of three team members—**Ana**, **Carlos**, and **Maria**—as part of a university assignment. Developed using **HTML5**, **CSS3**, and **vanilla JavaScript**, it features:
+This engaging web app showcases the personal profiles and hobbies of team Incultoo part of a university assignment. Developed using **HTML5**, **CSS3**, and **vanilla JavaScript**, it features:
 
 - 🧩 **Semantic structure** with accessible elements.
 - 📱 **Responsive design** with Flexbox and smooth animations.
@@ -21,9 +21,9 @@ This engaging web app showcases the personal profiles and hobbies of three team 
 |-----------------------|---------------------------------------------------------------------------|
 | **Natalia**          | UI/UX Designer: Created mockups, prototypes, and ensured a cohesive design language. |
 | **Daniel**           | UI/UX Designer: Created mockups, prototypes, and ensured a cohesive design language.|
-| **Alejandro**        | QA Engineer: Tested the application for bugs and ensured performance optimization. |
+| **Diego**        | QA Engineer: Tested the application for bugs and ensured performance optimization. |
 | **Karen**            | Content Strategist: Developed engaging content and ensured proper localization. |
-| **Cristian**         | DevOps Specialist: Managed deployment pipelines and maintained server infrastructure. |
+| **Cristian**         | Content Strategist: Developed engaging content and ensured proper localization.|
 
 ---
 
