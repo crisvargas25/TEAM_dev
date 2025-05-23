@@ -13,9 +13,8 @@
 <body>
     <header>
         <img class="site-img" src="./src/img/12.png" alt="Services image" class="services-image">
-        <h1 class="site-title">Our Professional Team</h1>
         <p class="site-subtitle">Meet the talented individuals behind our success</p>
-        <nav>
+        <nav id="main-nav">
             <ul class="nav-list">
                 <li><a href="#team">Team</a></li>
                 <li><a href="#features">Services</a></li>
@@ -33,7 +32,9 @@
             <div class="team-container">
                 <article class="team-member">
                     <div class="card-front">
-                        <img src="./src/img/diego.jpg" alt="Diego's profile photo" class="member-image">
+                        <div class="member-image-container">
+                            <img src="./src/img/diego.jpg" alt="Diego's profile photo" class="member-image">
+                        </div>
                         <div class="member-content">
                             <h3 class="member-name">Diego Antunez Ramirez</h3>
                             <p class="member-bio">Diego is a developer with experience in building web and mobile applications, as well as integrating embedded systems. His skill set combines software development with technical knowledge in hardware, allowing him to create functional and well-integrated technological solutions.</p>
@@ -54,7 +55,9 @@
 
                 <article class="team-member">
                     <div class="card-front">
-                        <img src="./src/img/Nat.png" alt="Natalia's profile photo" class="member-image">
+                        <div class="member-image-container">
+                            <img src="./src/img/Nat.png" alt="Natalia's profile photo" class="member-image">
+                        </div>
                         <div class="member-content">
                             <h3 class="member-name">Natalia Niebla Rosales</h3>
                             <p class="member-bio">Natalia specializes in creating intuitive user interfaces and effective user experiences. She also has strong project coordination skills, helping ensure timely task execution and smooth communication across teams, which contributes to efficient project delivery.</p>
@@ -75,7 +78,9 @@
 
                 <article class="team-member">
                     <div class="card-front">
-                        <img src="./src/img/cris.png" alt="Cristian's profile photo" class="member-image">
+                        <div class="member-image-container">
+                            <img src="./src/img/cris.png" alt="Cristian's profile photo" class="member-image">
+                        </div>
                         <div class="member-content">
                             <h3 class="member-name">Cristian Arturo Vargas Perez</h3>
                             <p class="member-bio">Cristian blends strategic leadership with full-stack development expertise. He manages team organization, project planning, and client communication, ensuring that final products align with established goals and meet high-quality standards.</p>
@@ -96,7 +101,9 @@
 
                 <article class="team-member">
                     <div class="card-front">
-                        <img src="./src/img/Karen.png"" alt="Karen's profile photo" class="member-image">
+                        <div class="member-image-container">
+                            <img src="./src/img/Karen.png" alt="Karen's profile photo" class="member-image">
+                        </div>
                         <div class="member-content">
                             <h3 class="member-name">Karen Vazquez</h3>
                             <p class="member-bio">Karen is a software developer skilled in creating web and mobile applications. She also plays a key role in system validation and testing, ensuring that technological solutions are stable, functional, and ready for deployment.</p>
@@ -117,7 +124,9 @@
 
                 <article class="team-member">
                     <div class="card-front">
-                        <img src="./src/img/dani.png" alt="Daniel's profile photo" class="member-image">
+                        <div class="member-image-container">
+                            <img src="./src/img/dani.png" alt="Daniel's profile photo" class="member-image">
+                        </div>
                         <div class="member-content">
                             <h3 class="member-name">Daniel Aurelio Villareal Gallegos</h3>
                             <p class="member-bio">Daniel is responsible for designing and overseeing system architectures within projects. He has a strong background in research and development, particularly in emerging technologies, and contributes to both software and hardware innovation.</p>
@@ -129,7 +138,7 @@
                         <div class="hobbies-container">
                             <div class="hobby">
                                 <h4 class="hobby-title"><span class="hobby-icon">🙂</span> Video games and Outdoor activities</h4>
-                                <p>I am a person who really enjoys video games, and that interest made me want to become a programmer to learn how video games work. However, I’m not only someone who spends time in front of a computer, I also like doing outdoor activities and playing sports. My favorite activities are camping and athletics, and I even compete in this sport.</p>
+                                <p>I am a person who really enjoys video games, and that interest made me want to become a programmer to learn how video games work. However, I'm not only someone who spends time in front of a computer, I also like doing outdoor activities and playing sports. My favorite activities are camping and athletics, and I even compete in this sport.</p>
                             </div>
                         </div>
                         <button class="flip-card-btn back-btn">Back to Profile</button>
@@ -138,15 +147,51 @@
             </div>
         </section>
 
-         <section id="testimonials">
-            <h2>Client Testimonials</h2>
-            <p>Here's what our clients and collaborators have to say about working with our team.</p>
+        <section id="features" class="features-section">
+            <h2 class="section-title">Our Services</h2>
+            <img class="section-img" src="./src/img/logopng1.png" alt="Services image" class="services-image">
+            <p class="section-intro">Incultoo is a technology solutions company committed to designing and delivering efficient, sustainable, and innovative systems that empower businesses to grow responsibly. With a focus on real-world impact, Incultoo combines software development, IoT integration, and data-driven insights to create tools that solve modern challenges across various industries.
+            Driven by a vision of shared progress, Incultoo partners with organizations that prioritize sustainability, offering tailored digital solutions that optimize processes, reduce resource waste,
+            and enhance decision-making through automation and intelligent systems.
+            Whether developing smart agricultural platforms, building cloud-connected monitoring systems, or creating intuitive dashboards for data analysis, Incultoo ensures that every project supports a future where technology and environmental responsibility go hand in hand.</p>
             
-            <div>
-                <div>
-                    <p>The team works in an organized manner thanks to their structure and the coordination led by each person in charge to ensure tasks are completed on time and as scheduled.</p>
-                    <div>
-                        <img src="./src/img/ana.jpg" alt="Client photo">
+            <div class="features-container">
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="feature-title">Strategic Consulting</h3>
+                    <p>We approach each challenge with analytical thinking and industry expertise to develop effective solutions for complex business problems.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Data Analysis</h3>
+                    <p>Our team transforms complex data into clear insights that drive informed decision-making and business growth.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💻</div>
+                    <h3 class="feature-title">Web Development</h3>
+                    <p>We create responsive, accessible, and professional web experiences that engage users and represent your brand effectively.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Digital Marketing</h3>
+                    <p>Our comprehensive approach ensures that your digital presence aligns with business objectives and reaches your target audience.</p>
+                </div>
+            </div>
+        </section>
+
+         <section id="testimonials" class="testimonials-section">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-intro">Here's what our clients and collaborators have to say about working with our team.</p>
+
+            
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p class="testimonial-content">The team works in an organized manner thanks to their structure and the coordination led by each person in charge to ensure tasks are completed on time and as scheduled.</p>
+                    <div class="testimonial-author">
+                        <img src="./src/img/ana.jpg" alt="Client photo" class="testimonial-avatar">
                         <div>
                             <p>Miss. Anna Chairez</p>
                             <p>Teacher</p>
@@ -154,10 +199,10 @@
                     </div>
                 </div>
                 
-                <div>
-                    <p>My expectations were fully met while working with this team. I can say my experience was very positive. They are well-organized and show a great attitude toward completing their tasks.</p>
-                    <div>
-                        <img src="./src/img/bravo.jpg" alt="Client photo">
+                <div class="testimonial">
+                    <p class="testimonial-content">My expectations were fully met while working with this team. I can say my experience was very positive. They are well-organized and show a great attitude toward completing their tasks.</p>
+                    <div class="testimonial-author">
+                        <img src="./src/img/bravo.jpg" alt="Client photo" class="testimonial-avatar">
                         <div>
                             <p>Alberto Bravo Alcaraz</p>
                             <p>Teacher</p>
@@ -165,10 +210,10 @@
                     </div>
                 </div>
                 
-                <div>
-                    <p>What stands out the most about this team is their talent, initiative, and productivity. They bring innovative and original ideas that meet the objectives, and they apply and implement improvements to achieve better results.</p>
-                    <div>
-                        <img src="./src/img/orrico.jpg" alt="Client photo">
+                <div class="testimonial">
+                    <p class="testimonial-content">What stands out the most about this team is their talent, initiative, and productivity. They bring innovative and original ideas that meet the objectives, and they apply and implement improvements to achieve better results.</p>
+                    <div class="testimonial-author">
+                        <img src="./src/img/orrico.jpg" alt="Client photo" class="testimonial-avatar">
                         <div>
                             <p>Alfredo Orrico Sánchez</p>
                             <p>Teacher</p>
@@ -176,30 +221,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have a question or want to work with us? Send us a message and we'll get back to you as soon as possible.</p>
-            
-            <form novalidate>
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
-                    <span id="name-error">Please enter your name</span>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
-                    <span id="email-error">Please enter a valid email address</span>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required aria-required="true"></textarea>
-                    <span id="message-error">Please enter your message</span>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
         </section>
 
         <section id="contact" class="contact-section">
