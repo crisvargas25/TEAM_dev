@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad IV</title>
+
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/team.css">
+    <link rel="stylesheet" href="src/css/features.css">
+    <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="src/css/testimonials.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+
     <script src="src/js/script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
 </head>
 
 <body>
     <header>
-        <img class="site-img" src="./src/img/12.png" alt="Services image" class="services-image">
-        <p class="site-subtitle">Meet the talented individuals behind our success</p>
         <nav id="main-nav">
+            <a href="#main-nav" class="logo-link">
+                <img src="./src/img/logotipos/icono.png" alt="Logo" class="logo">
+            </a>
+
             <ul class="nav-list">
                 <li><a href="#team">Team</a></li>
                 <li><a href="#features">Services</a></li>
@@ -22,13 +36,32 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
+        
+        <h1 class="site-title">Welcome to</h1>
+        <img class="site-img" src="src/img/logotipos/main.png" alt="Logo image">
+        <p class="site-subtitle">Meet the talented individuals behind our success</p>
+        
     </header>
 
     <main>
+        <section id="general-info" class="general-info-section">
+            <h2 class="section-title">Who are we?</h2>
+            <p class="section-intro">At Incultoo, our primary objective is to design, develop, and implement intelligent technological solutions that not only solve current operational challenges but also anticipate future needs across a wide range of industries.</p>
+
+            <div class="mission-vision-container">
+                <div class="mission-vision-item">
+                    <h3 class="section-title">Mission</h3>
+                    <p class="section-intro">To design and implement intelligent technological solutions that drive efficiency, sustainability, and innovation across diverse industries, empowering our clients to transform their processes through smart automation, data analysis, and scalable digital tools.</p>
+                </div>
+
+                <div class="mission-vision-item">
+                    <h3 class="section-title">Vision</h3>
+                    <p class="section-intro">To support and grow alongside businesses that share a sustainable and responsible mindset, providing them with accessible, efficient, and innovative technology solutions. At Incultoo, we believe that meaningful progress happens when we work together to improve the way we care for our resources, our communities, and our environment.</p>
+                </div>
+
+        </section>
+
         <section id="team">
-            <h2 class="section-title">Meet Our Team</h2>
-            <p class="section-intro">Our diverse team brings together expertise from various fields to create exceptional experiences. Click on the cards to learn more about each team member's unique hobbies and interests.</p>
-            
             <div class="team-container">
                 <article class="team-member">
                     <div class="card-front">
@@ -149,7 +182,7 @@
 
         <section id="features" class="features-section">
             <h2 class="section-title">Our Services</h2>
-            <img class="section-img" src="./src/img/logopng1.png" alt="Services image" class="services-image">
+            <img class="section-img" src="./src/img/logotipos/main.png" alt="Services image" class="services-image">
             <p class="section-intro">Incultoo is a technology solutions company committed to designing and delivering efficient, sustainable, and innovative systems that empower businesses to grow responsibly. With a focus on real-world impact, Incultoo combines software development, IoT integration, and data-driven insights to create tools that solve modern challenges across various industries.
             Driven by a vision of shared progress, Incultoo partners with organizations that prioritize sustainability, offering tailored digital solutions that optimize processes, reduce resource waste,
             and enhance decision-making through automation and intelligent systems.
@@ -182,7 +215,7 @@
             </div>
         </section>
 
-         <section id="testimonials" class="testimonials-section">
+        <section id="testimonials" class="testimonials-section">
             <h2 class="section-title">Client Testimonials</h2>
             <p class="section-intro">Here's what our clients and collaborators have to say about working with our team.</p>
 

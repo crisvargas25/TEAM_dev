@@ -1,0 +1,17 @@
+/* variables.css - CSS custom properties for consistent theming [CSS3 norm] - Maria */
+:root {
+    --color-primary: #12bdb7; /* Dark blue/slate */
+    --color-secondary: #87ffbd; /* Darker blue/slate */
+    --color-accent: #6857e4; /* Bright blue */
+    --color-background: #f9f9f9; /* Light gray/blue */
+    --color-dark: #2c3350; 
+    --color-light: #ffffff;
+    --color-muted: #95A5A6; /* Muted blue/gray */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --border-radius: 30px;
+    --transition: all 0.3s ease;
+    --shadow: 0 10px 20px rgba(44, 62, 80, 0.1);
+} 

@@ -1,0 +1,54 @@
+/* Responsive design using media queries [CSS3 norm] - Maria */
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .site-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member {
+        height: 580px; /* Slightly taller for mobile */
+        
+    }
+
+    .member-image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .team-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

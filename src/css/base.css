@@ -1,0 +1,21 @@
+/* estilos.css */
+@import url('fonts.css');
+
+/* Base styles with accessibility considerations */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat-Bold';
+    line-height: 1;
+}
