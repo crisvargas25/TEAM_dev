@@ -33,6 +33,14 @@
     align-items: center;
     position: sticky;
     bottom: var(--spacing-sm);
+    background-color: var(--color-primary);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    z-index: 1;
+    box-shadow: var(--shadow);
+    background: linear-gradient(5deg, var(--color-accent), var(--color-primary));
+    color: var(--color-light);
+    font-weight: 600;
 }
 
 .testimonial-avatar {

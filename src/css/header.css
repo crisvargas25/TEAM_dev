@@ -58,7 +58,7 @@ header::before { /* Pseudo-element for header background effect */
     position: relative;
     top: -20px; /* Adjusts the subtitle position */
     font-size: 1.4rem;
-    margin-bottom: var(--spacing-lg);
+    margin: var(--spacing-sm) 23rem var(--spacing-lg);
 }
 
 
