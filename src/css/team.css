@@ -1,13 +1,23 @@
-/* Using CSS Grid for team layout [CSS3 norm] - Maria */
-.team-container {
+/* Using CSS Grid for team layout [CSS3 norm] */
+.team-container1 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: var(--spacing-md);
     margin-bottom: var(--spacing-xl);
-    perspective: 1000px;
 }
 
-/* Team member card styling with flip effect - Ana */
+.team-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    margin: 0 200px; /* Eliminado margen lateral para maximizar espacio */
+    justify-items: center; /* Centra las tarjetas en sus celdas */
+}
+
+/* Team member card styling with flip effect */
 .team-member {
     position: relative;
     transition: var(--transition);
@@ -19,7 +29,7 @@
 }
 
 .card-front, .card-back {
-    position: absolute;
+    position: absolute; /* Position both sides absolutely */
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -34,10 +44,11 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
+    padding: var(--spacing-sm) var(--spacing-lg)  var(--spacing-lg )var(--spacing-lg);
 }
 
 .card-back {
-    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+    background: linear-gradient(5deg, var(--color-accent), var(--color-primary));
     color: var(--color-light);
     transform: rotateY(180deg);
     padding: var(--spacing-lg);
@@ -55,10 +66,11 @@
     background-color: var(--color-accent);
     color: var(--color-light);
     border: none;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-md);
+    font-size: 1rem;
     border-radius: var(--border-radius);
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    cursor: pointer; 
+    font-family: 'Montserrat';
     font-weight: 600;
     transition: var(--transition);
     margin-top: auto;
@@ -68,9 +80,8 @@
 }
 
 .flip-card-btn:hover {
-    background-color: var(--color-secondary);
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 .back-btn {
@@ -79,39 +90,36 @@
     width: 100%;
     text-align: center;
     padding: var(--spacing-md);
-    font-size: 1.1rem;
-}
+    font-size: 1rem;
+} 
 
 .back-btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-
-/* Improved image container for circular images */
 .member-image-container {
-    width: 150px;
-    height: 150px;
+    height: 300px; /* Fixed height to match the red background area */
+    width: 300px; /* Full width of the card */
+    margin: var(--spacing-sm) auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    position: relative;
-    border-radius: 50%;
-    margin: var(--spacing-lg) auto var(--spacing-md);
-    border: 3px solid var(--color-primary);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.member-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top; /* Focus on the top part of images (usually faces) */
+    border-radius: var(--border-radius); /* Rounded top corners */
 }
 
 .member-content {
-    padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
     flex: 1;
 }
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius); 
+} 
+
 
 .member-name {
     color: var(--color-primary);
@@ -125,7 +133,7 @@
     text-align: center;
     margin-bottom: var(--spacing-md);
     font-size: 1.8rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid var(--color-light);
     padding-bottom: var(--spacing-sm);
 }
 

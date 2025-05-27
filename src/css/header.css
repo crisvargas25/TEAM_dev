@@ -26,6 +26,7 @@ nav {
     margin: 0 auto;
     margin-top: 1em;
     width: 85%;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
 }
 
 header::before { /* Pseudo-element for header background effect */

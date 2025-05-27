@@ -69,6 +69,7 @@
     cursor: pointer;
     transition: var(--transition);
     margin-top: var(--spacing-sm);
+    font-size: 1rem;
 }
 
 .submit-btn:hover {
@@ -80,7 +81,7 @@
 /* Form validation styling */
 .form-group input:invalid,
 .form-group textarea:invalid {
-    border-color: #E74C3C;
+    border-color: var(--color-accent);
 }
 
 .error-message {
