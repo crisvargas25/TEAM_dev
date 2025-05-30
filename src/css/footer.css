@@ -1,7 +1,7 @@
 /* Footer styling */
 footer {
     /*background-color: var(--color-secondary);*/
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    background: var(--color-dark);
     color: var(--color-light);
     text-align: center;
     padding: var(--spacing-lg) var(--spacing-lg);
